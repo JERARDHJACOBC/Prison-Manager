@@ -1,0 +1,53 @@
+<%@ page language="java" %>
+<%@ page session="true" %>
+<%@ page import="java.sql.*,java.io.*"%>
+<%@ page isErrorPage="false" %>
+<%@ page errorPage="errorPage.jsp" %>
+<HEAD>
+	<LINK href="styles/styles.css" type="text/css" rel="stylesheet">
+<script LANGUAGE="Javascript" SRC="utilities.js"></script>
+</HEAD>
+<BODY class=SC>
+<h3 align=center>View Requests</h3>
+<P><a href='ViewRequestsXL.jsp'>Download Excel</a></P>
+
+<%
+
+	Connection con=null;
+	ResultSet rs=null;
+	Statement stmt=null;
+	try{
+			
+			con = com.PrisonManager.ConnectionPool.getConnection();
+                        stmt =  con.createStatement();
+			String Query = "Select * from interviewrequests order by `interviewid`";
+			rs = stmt.executeQuery(Query);
+			%>
+						<table align="center" width="100%">
+							<tr class=row_title>
+							<th align="left">Interview Id</th><th align="left">Request Date</th><th align="left">Requested By</th><th align="left">Prisoner Id</th><th align="left">Relationship</th><th align="left">Address</th><th align="left">Timeslot From</th><th align="left">Timeslot To</th><th align="left">Staff Id</th><th align="left">Request Status</th><th align="left">Purpose</th>
+							</tr>
+					<%
+			int rCount=0;
+			while(rs.next())
+			{
+					%>
+					<tr class= '<%=(rCount%2!=0)? "row_even" : "row_odd"%>'>
+						<td><%=rs.getString(1)%></td><td><%=rs.getString(2)%></td><td><%=rs.getString(3)%></td><td><%=rs.getString(4)%></td><td><%=rs.getString(5)%></td><td><%=rs.getString(6)%></td><td><%=rs.getString(7)%></td><td><%=rs.getString(8)%></td><td><%=rs.getString(9)%></td><td><%=rs.getString(10)%></td><td><%=rs.getString(11)%></td>
+					</tr>
+					<%
+				rCount++;
+			}
+			if( rCount == 0)	{%><tr><td colspan=11 align=center>Sorry No records Found</td></tr><% }
+			rs.close();
+			stmt.close();
+			con.close();
+		}catch(Exception e){
+			//rs.close();
+			stmt.close();
+			con.close();
+			throw new Exception(e);
+		}
+	
+%>
+</BODY>

@@ -1,0 +1,176 @@
+a.toplinks
+{
+	font-family:Verdana;
+	color:#6666FF;
+	font-size:18px;	
+	text-decoration:none;
+}
+a.genlinks
+{
+	font-family:Tahoma;
+	color:#3333ff;
+	font-size:20px;	
+        text-decoration: underline;
+        cursor: hand;
+}
+a.genlinks Hover{
+        font-family:Tahoma;
+	color:#FF0000;
+	font-size:20px;	
+        text-decoration: underline;
+} 
+a.genlinks Active{
+        font-family:Tahoma;
+	color:#FF00FF;
+	font-size:20px;	
+        text-decoration: underline;
+}
+.row_title {
+    FONT-SIZE: 15px; BACKGROUND-COLOR: #999966 ;FONT-WEIGHT: bold; font-family:Tahoma;
+    background-color: #9999ff;
+}
+.row_odd {
+    FONT-SIZE: 14px; BACKGROUND-COLOR: #c8c8c8 ;FONT-WEIGHT: normal; font-family:Tahoma;
+    color: #000000;
+}
+.row_even {
+    FONT-SIZE: 14px; BACKGROUND-COLOR: #E8E8E8 ;FONT-WEIGHT: normal; font-family:Tahoma;
+    color: #000000;
+}
+tr{
+    FONT-SIZE: 11px; BACKGROUND-COLOR: #c8c8c8 ;FONT-WEIGHT: normal; font-family:Tahoma;
+    color: #000000;
+}
+TABLE {
+    BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px;
+}
+tr.Top{
+    FONT-SIZE: 11px; BACKGROUND-COLOR: #000000 ;FONT-WEIGHT: normal; font-family:Tahoma;
+    color: #FFFFFF;
+}
+fieldset,legend {
+    
+    font-family: monospace;
+    font-size: 15px;
+    
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+    background-color: #000000;
+}
+body.Main{
+    background-color: #9999ff;
+    font: icon;
+    color: red;
+    font-style: bold;
+    font-size: 25px;
+    
+}
+
+body.SC{
+    background-color: blue;
+    font: icon;
+    color: black;
+}
+    .pg-normal {
+        color: pink;
+        font-weight: normal;
+        text-decoration: none;    
+        cursor: hand; 
+               
+   }
+   .pg-selected {
+        color: orange;
+        font-weight: bold;        
+        text-decoration: underline;
+        cursor: pointer;
+   }
+   .pg_div{
+        font-family:calibri;
+        font-size:12px;
+    }
+  .menu {background-color:#000000;border-bottom:0px solid #d7d7d7; height:23px;width:700px; TEXT-ALIGN:CENTER}
+  .menu ul {margin:0px; padding:0px; list-style:none; text-align:center;}
+  .menu td {display:inline; line-height:23px;}
+  .menu li a {color:#ffffff; text-decoration:none; padding:5px 5px 6px 5px; }
+  .menu li a.tabactive {border-left:1px solid #d7d7d7; border-right:1px solid #d7d7d7; color:#000000; background-color:#ffffff; font-weight:bold;  position:relative;}
+  .tdclass1 {
+        display:inline; 
+        line-height:23px;
+        font-family:Tahoma;
+        font-size:11px;
+        text-align:center;
+        color:#ffffff;
+    }
+  .tdclass2 {display:inline; line-height:23px;font-family:Tahoma;font-size:16px;bgcolor:#ffffff}
+  .subMenu  {
+        background-color:black; 
+        color: green;
+        font-size:15px;
+        font-family: Tahoma,Georgia,Verdana;
+        
+   }
+   .subMenuHighLight  {
+        background-color:#000000; 
+        color: #000000;
+          
+       font-style: bold;
+       font-family: Tahoma,Georgia,Verdana;
+}
+.dgHeader
+{
+	font-weight:bold;
+	border-color:#000000;
+	background-color:#000000; 
+	border-top-width:1px;
+	border-bottom-width:1px;
+	border-left-width:1px;
+	border-right-width:1px;
+	border-top-color:#000000;
+	border-bottom-color:#000000;
+	border-left-color:#000000;
+	border-right-color:#000000;
+         
+}
+ body.tabbedmenu
+ {
+     font-size:11px;
+     cursor:hand;
+     background-color:#000000;
+     font-family: Tahoma;
+}
+.Button{
+	font-size:	9pt;
+	text-align:	center;
+	text-decoration: none;
+	color:		#663300;
+	background:	#EAEBD6;
+	border-top:	2px solid #C9C9C9;
+	border-left:	2px solid #C9C9C9;
+	border-right:	2px solid #C9C9C9;
+	border-bottom:	2px solid #C9C9C9;
+	font-family:	Tahoma,Verdana, Arial,"Comic Sans MS";
+
+}
+.TextField	{
+	font-size:	9pt;
+	text-align:	center;
+	text-decoration: none;
+	color:		#666666;
+	background:	#ffffff;
+	border-top:	1px solid #C9C9C9;
+	border-left:	1px solid #C9C9C9;
+	border-right:	1px solid #C9C9C9;
+	border-bottom:	1px solid #C9C9C9;
+	font-family:	Tahoma,Verdana, Arial,"Comic Sans MS";
+	width: 120px;
+	}
+.ListBox {
+	font-size:	9pt;
+	text-align:	center;
+	text-decoration: none;
+	color:		#666666;
+	background:	#ffffff;
+	font-family:	Tahoma,Verdana, Arial,"Comic Sans MS";
+
+}
